@@ -1,4 +1,15 @@
-# p4WebAppMyContacts
+﻿# p4WebAppMyContacts
+
+27/01/2016
+----------
+
+
+26/01/2016
+----------
+* Mostrar contactos de cada usuario
+* Sistema de Login/Logout
+* Introducció de dades a la bd
+* Disseny de la base de dades
 
 25/01/2016
 "Creació de la web app MyContacts. Una aplicació que, un cop logat, et permeti guardar tota la informació dels teus contactes (nom, cognoms, correu electrònic, adreça, telèfons... i fins a dues ubicacions: casa i feina/escola/altres). En el procés d'alta d'un contacte, s'ha de poder triar al mapa de Google Maps una ubicació, o bé mitjançant la introducció de les dades pròpies de geoposicionament (latitud i longitud).
