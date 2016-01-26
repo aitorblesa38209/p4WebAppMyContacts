@@ -1,0 +1,96 @@
+body{
+	color: #fff;
+	background: url('../img/pattern.png') fixed;
+}
+
+header p{
+	margin-top: 4%;
+	margin-left: 25%;
+	font-size: 18px;
+}
+
+header h1{
+	float: left;
+	margin-left: 43%;
+	width: auto;
+	border: solid 1px;
+	border-color: rgba(255,255,255,.5);
+	padding: 10px;
+	font-size: 25px;
+	text-align: center;
+}
+
+.logout{
+	float: right;
+	margin-right: 27%;
+}
+
+section p{
+	width: 70%;
+	text-align: justify;
+}
+
+.reserva{
+	color: #fff;
+	text-decoration: none;
+	float: right;
+	padding: 1%;
+	margin: 0 1% 1%;
+	background-color:rgba(198,227,224,.3);
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+}
+
+.reserva:hover{
+	color: rgb(65,164,153);
+	background-color: #fff;
+}
+
+.envoltura{
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
+}
+
+.contenido{
+	width: 50%;
+	background-color: rgba(65,164,153,.3);
+	margin: 2% 25%;
+	float: left;
+}
+
+.contenido h1{
+	font-size: 20px;
+	padding-left: 4%;
+}
+
+.contenido p{
+	font-size: 18px;
+	padding-left: 4%;
+}
+#rellena_contenido{
+	width: 15%;
+	height: 30px;
+	font-size: 22px;
+	padding: 1%;
+	border: 1px solid rgba(255,255,255);
+	background-color: rgba(255,255,255,.5);
+	margin: 15% 40%;
+	
+}
+
+/**************************** --FOOTER-- ********************************/
+footer{
+	position:fixed;
+	bottom: 0;
+	clear: both;
+	width: 100%;
+	margin-left:2%;
+}
+footer a{
+	position:fixed;
+	bottom:10px;
+	right: 20px;
+}
