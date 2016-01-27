@@ -20,11 +20,11 @@
 			<section>
 				<h1>Accede a tu Agenda</h1>
 					<form id="formulario_box" method="POST">
-						<input name="user" type="text" placeholder="Email">
-						<input name="pass" type="password" placeholder="Contraseña">
+						<input name="user" type="text" placeholder="Email" required title="Formato correcto: xxx.xxx@dominio.com">
+						<input name="pass" type="password" placeholder="Contraseña" required>
 						<input name="submit" type="submit" value="Login"></input>
 					</form>
-				<input name="submit" type="submit" value="Regístrate" onclick="location.href='registro.php'"></input>
+				<input name="submit" type="submit" value="Regístrate" onclick="location.href='registro_usuarios.php'"></input>
 
 				<?php echo $error ;?>
 			</section>
