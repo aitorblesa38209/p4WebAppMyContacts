@@ -37,9 +37,9 @@ if(empty($_SESSION['login_user'])){
             <p>Email:    <input type="email" name="mail" required title="Formato correcto: jose@mycontacts.com"></p>
             <p>Teléfono: <input type="tel"  name="telefono" pattern="[0-9]{9}" required></p>
             <p>Direción: <input type="text" name="direccion" required></p>
-            <p>Latitud: <input type="text" id="latitud" name="latitud" value="" size="100"></p>
-            <p>Longitud:<input type="text" id="longitud" name="longitud" value=""></p>
-            <div id="map" style="width:300px;height:200px;"></div><br/>
+            <p>Latitud: <input type="text" id="latitud" name="latitud" value="" size="30"></p>
+            <p>Longitud:<input type="text" id="longitud" name="longitud" value="" size="30"></p>
+            <div id="map" style="width:600px;height:500px;"></div><br/>
             <input type="submit" name="enviar" value="Enviar">
          </form>
 	   </article>
