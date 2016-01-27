@@ -1,135 +1,128 @@
-body {
-	margin: 0;
-	/*background-color: #323B55;*/
-	background: url("../img/pattern.png") no-repeat fixed center;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-	background-size: cover;
-}
-
-@font-face {
-	font-family: Raleway;
-	src: url('../fonts/Raleway-Thin.ttf');
+body{
+	color: #fff;
+	background: url('../img/pattern.png') fixed;
 }
 
 img{
 	margin:0;
 	position: absolute;
 }
-section{
-	width: 30%;
-	height: 500px;
-	border: 1px solid rgba(255,255,255);
-	background-color: rgba(255,255,255,.5);
-	margin: 10% 35%;
+/*nav{
+	width: 50%;
+	border: solid 1px;
+	margin-left: 25%
+	float: left;
+}
+*/
+header p{
+	margin-top: 7%;
+	margin-left: 25%;
+	font-size: 18px;
+}
+
+header h1{
+	float: left;
+	margin-left: 43%;
+	width: auto;
+	border: solid 1px;
+	border-color: rgba(255,255,255,.5);
+	padding: 10px;
+	font-size: 25px;
+	text-align: center;
+}
+
+.logout{
+	float: right;
+	margin-right: 30%;
+}
+
+section p{
+	width: 70%;
+	text-align: justify;
+}
+
+.contenido_user{
+	color: #fff;
+	padding: 0.5%;
+	float: left;
+	text-decoration: none;
+	background-color:rgba(198,227,224,.3);
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+
+}
+
+.contenido_user:hover{
+	color: rgb(65,164,153);
+	background-color: #fff;
+}
+
+.modificar{
+	color: #fff;
+	padding: 1%;
+	border-width: 0;
+	float: right;
+	margin-right: 1%;
+	margin-bottom: 10px;
+	background-color:rgba(198,227,224,.3);
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+	position: relative;
+	text-decoration: none;
+}
+
+.modificar:hover{
+	color: rgb(65,164,153);
+	background-color: #fff;
+}
+.envoltura{
+	top: 0;
+	left: 0;
+	width: 100%;
 	position: absolute;
 }
 
-
-h1{
-	margin-left: 30%;
-	margin-top: 5%;
-	color: #000;
-	float:left;
-	font-family: Raleway thin;
-	font-size: 25px
+.contenido{
+	width: 40%;
+	/*height: auto;*/
+	background-color: rgba(65,164,153,.3);
+	margin: 1% 30%;
+	float: right;
 }
 
-#formulario_box {
-	margin-left: 10%;
-	width: 80%;
-	padding-top: 8%;
+.contenido h1{
+	font-size: 20px;
+	padding-left: 4%;
 }
 
-#formulario_box input[type="text"], input[type="password"] {
+.contenido p{
+	font-size: 18px;
+	padding-left: 10%;
+}
+
+.contenido input[type="text"], input[type="email"], input[type="tel"]{
 	height: 40px;
-	margin-top: 7%;
 	font-size: 14px;
+	margin-top: 10px;
 	color: #444;
 	border: 1px solid rgba(0, 0, 0, .49);
 	padding-left: 5%;
 	border-radius: 6px;	
 	width: 100%;
-	-webkit-box-sizing: border-box;
 }
 
-.error{
-	margin-top: 25%;
-	font-size: 22px;
-	margin-left: 25%;
-	color: red;
-}
-
-#formulario_box input[type="submit"] {
-	width: 48%;
-	height: 50px;
-	margin-top: 7%;
-	color: #fff;
-	font-size: 18px;
-	float: left;
-	font-weight: bold;
-	text-shadow: 0px -1px 0px #5b6ddc;
-	border: 1px solid rgba(0, 0, 0, .49);
-	border-radius: 6px;
-	cursor: pointer;
-	background-image: -webkit-linear-gradient(bottom, #5466da 0%, #768ee4 100%);
-}
-
-#formulario_box input[type="submit"]:hover {
-	background-image: -webkit-linear-gradient(bottom, #98a3e8 0%, #768ee4 100%);	
-}
-
-input[type="submit"] {
-	width: 39%;
-	height: 50px;
-	float: left;
-	margin-top: 5.50%;
-	margin-left: 1%;
-	color: #fff;
-	font-size: 18px;
-	font-weight: bold;
-	text-shadow: 0px -1px 0px #5b6ddc;
-	border: 1px solid rgba(0, 0, 0, .49);
-	border-radius: 6px;
-	cursor: pointer;
-	background-image: -webkit-linear-gradient(bottom, #5466da 0%, #768ee4 100%);
-}
-
-input[type="submit"]:hover {
-	background-image: -webkit-linear-gradient(bottom, #98a3e8 0%, #768ee4 100%);	
-}
-
-a{
-	width: 40%;
-	height: 33px;
-	color: #fff;
-	margin-top: 5.5%;
-	margin-left: 5px;
-	text-align: center;
-	padding-top: 15px;
-	float: left;
-	font-size: 18px;
-	font-weight: bold;
-	text-shadow: 0px -1px 0px #5b6ddc;
-	border: 1px solid rgba(0, 0, 0, .49);
-	border-radius: 6px;
-	cursor: pointer;
-	text-decoration: none;
-	background-image: -webkit-linear-gradient(bottom, #5466da 0%, #768ee4 100%);
-	
-}
-
-a:hover{
-	background-image: -webkit-linear-gradient(bottom, #98a3e8 0%, #768ee4 100%);
-}
-
+/**************************** --FOOTER-- ********************************/
 footer{
 	position:fixed;
 	bottom: 0;
-	color: #000;
 	clear: both;
 	width: 100%;
 	margin-left:2%;
-	color: #fff
+}
+footer a{
+	position:fixed;
+	bottom:10px;
+	right: 20px;
 }

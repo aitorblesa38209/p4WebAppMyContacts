@@ -3,6 +3,11 @@ body{
 	background: url('../img/pattern.png') fixed;
 }
 
+img{
+	margin:0;
+	position: absolute;
+}
+
 /*nav{
 	width: 50%;
 	border: solid 1px;

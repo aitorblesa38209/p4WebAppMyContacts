@@ -38,6 +38,7 @@ if(empty($_SESSION['login_user'])){
 						echo utf8_encode(" <p>Email: $mostrar[con_mail]</p>");
 						echo utf8_encode(" <p>Telefono: $mostrar[con_telefono]</p>");
 						echo utf8_encode(" <p>Direccion: $mostrar[con_direccion]</p>");
+<<<<<<< HEAD
 
                   $matriz = array('nombre' => $mostrar['con_nombre'],
                                   'latitud' => $mostrar['con_latitud'],
@@ -45,6 +46,9 @@ if(empty($_SESSION['login_user'])){
                                   
 						echo utf8_encode("<a href='modificar.php' class='modificar'>Modificar</a>");
 
+=======
+						echo utf8_encode("<a class='modificar' href='modificar.php?id_usuari=$mostrar[con_id]'>Modificar</a>");
+>>>>>>> 94faeb0c9a19b08cb7139b564c718948ec8fadf1
 	            		?>
 	            		</article>
 	            		<?php
