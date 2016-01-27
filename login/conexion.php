@@ -1,3 +1,3 @@
 <?php
-$conexion=mysqli_connect('localhost', 'root', '', 'bd_mycontacts');
+$conexion=mysqli_connect('localhost', 'root', 'root', 'bd_mycontacts');
 ?>
