@@ -3,8 +3,15 @@ body{
 	background: url('../img/pattern.png') fixed;
 }
 
+/*nav{
+	width: 50%;
+	border: solid 1px;
+	margin-left: 25%
+	float: left;
+}
+*/
 header p{
-	margin-top: 4%;
+	margin-top: 7%;
 	margin-left: 25%;
 	font-size: 18px;
 }
@@ -30,23 +37,41 @@ section p{
 	text-align: justify;
 }
 
-.reserva{
+.contenido_user{
 	color: #fff;
+	padding: 0.5%;
+	float: left;
 	text-decoration: none;
-	float: right;
-	padding: 1%;
-	margin: 0 1% 1%;
 	background-color:rgba(198,227,224,.3);
 	-webkit-transition: all ease 0.8s;
 	-moz-transition: all ease 0.8s;
 	transition: all ease 0.8s;
+
 }
 
-.reserva:hover{
+.contenido_user:hover{
 	color: rgb(65,164,153);
 	background-color: #fff;
 }
 
+.modificar{
+	color: #fff;
+	padding: 1%;
+	text-decoration: none;
+	float: right;
+	margin-right: 1%;
+	margin-bottom: 10px;
+	background-color:rgba(198,227,224,.3);
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+	position: relative;
+}
+
+.modificar:hover{
+	color: rgb(65,164,153);
+	background-color: #fff;
+}
 .envoltura{
 	top: 0;
 	left: 0;
@@ -56,9 +81,10 @@ section p{
 
 .contenido{
 	width: 50%;
+	height: auto;
 	background-color: rgba(65,164,153,.3);
-	margin: 2% 25%;
-	float: left;
+	margin: 1% 25%;
+	float: right;
 }
 
 .contenido h1{
@@ -70,6 +96,7 @@ section p{
 	font-size: 18px;
 	padding-left: 4%;
 }
+
 #rellena_contenido{
 	width: 15%;
 	height: 30px;
@@ -78,7 +105,6 @@ section p{
 	border: 1px solid rgba(255,255,255);
 	background-color: rgba(255,255,255,.5);
 	margin: 15% 40%;
-	
 }
 
 /**************************** --FOOTER-- ********************************/

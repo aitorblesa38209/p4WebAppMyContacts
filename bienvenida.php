@@ -14,7 +14,14 @@ if(empty($_SESSION['login_user'])){
 		<meta charset="utf-8">
 		<meta name="description" content="sesiones">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="icon" type="image/png" href="img/favicon.png"/>
+	</head>
 		<body>
+	<!-- <nav>
+			<img src="img/logo.png" alt="MyContacts" width="50px">
+			<ul><a href="#" class="contenido_user">Mi perfil</a></ul>
+		</nav> -->
+		
 		<section class="envoltura">
 		<header>
 			<p><a href="login/logout.php" class="logout" title="Logout"><img src="img/logout_white.png" alt="Logout"></a>
@@ -31,7 +38,7 @@ if(empty($_SESSION['login_user'])){
 						echo utf8_encode(" <p>Email: $mostrar[con_mail]</p>");
 						echo utf8_encode(" <p>Telefono: $mostrar[con_telefono]</p>");
 						echo utf8_encode(" <p>Direccion: $mostrar[con_direccion]</p>");
-						
+						echo utf8_encode("<a href='modificar.php' class='modificar'>Modificar</a>");
 	            		?>
 	            		</article>		
 	            		<?php
