@@ -1,0 +1,1 @@
+INSERT INTO `bd_mycontacts`.`tbl_contactos` (`con_id`, `con_nombre`, `con_apellido`, `con_mail`, `con_telefono`, `con_direccion`, `con_latitud`, `con_longitud`, `usu_id`) VALUES (NULL, 'Álvaro', 'Camacho', 'alvaro@gmail.com', '655522123', 'Carrer Mayor, 3', '41.397826', '1.967041', '1');

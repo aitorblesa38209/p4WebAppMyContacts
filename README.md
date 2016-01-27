@@ -1,8 +1,11 @@
 ﻿# p4WebAppMyContacts
 
+api google felipe: AIzaSyBW_5m9Miz3xloHRp1QF3cW5V_I0qoz3RI
+
 27/01/2016
 ----------
-
+*Sistema d'introducció d'usuaris
+*Recepció d'informació en el map
 
 26/01/2016
 ----------

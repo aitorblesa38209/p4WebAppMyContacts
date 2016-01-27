@@ -31,16 +31,24 @@ if(empty($_SESSION['login_user'])){
 						echo utf8_encode(" <p>Email: $mostrar[con_mail]</p>");
 						echo utf8_encode(" <p>Telefono: $mostrar[con_telefono]</p>");
 						echo utf8_encode(" <p>Direccion: $mostrar[con_direccion]</p>");
-						
+                  $matriz = array('nombre' => $mostrar['con_nombre'],
+                                  'latitud' => $mostrar['con_latitud'],
+                                  'longitud' => $mostrar['con_longitud']);
 	            		?>
-	            		</article>		
+	            		</article>
 	            		<?php
 	            	}
 				}else{
 	        		echo "<article id='rellena_contenido'>Inserta contactos en tu agenda!</article>";
-	        	}	
+	        	}
 			?>
 		<footer>
+         <?php
+            if ($matriz!=null) {
+               $datosJson = json_encode($matriz,true);
+               echo $datosJson;
+            }
+         ?>
 			<p>CopyRight &copy; creado por Aitor<p>
 			<a href="#"><img src="img/scrolltop.png" alt="top"></a>
 		</footer>
