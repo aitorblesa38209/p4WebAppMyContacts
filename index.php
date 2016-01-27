@@ -16,7 +16,6 @@
 		<nav>
 			<img src="img/logo.png" alt="MyContacts" width="50px">
 		</nav>
-		
 	</header>
 			<section>
 				<h1>Accede a tu Agenda</h1>
