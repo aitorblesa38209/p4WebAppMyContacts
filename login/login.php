@@ -9,7 +9,7 @@ $error="";
 //Si no existe la variable enviamos la variable error al html de index
 if (isset($_REQUEST['submit'])) {
 	if (empty($_REQUEST['user']) || empty($_REQUEST['pass'])){
-		$error ="<div class='error'>Introduce un Usuario y Contraseña</div>";
+		//$error ="<div class='error'>Introduce un Usuario y Contraseña</div>";
 	}else{
 		//Definimos la variable usuario y password
 		$email = $_REQUEST['user'];
