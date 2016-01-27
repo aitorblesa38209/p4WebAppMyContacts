@@ -7,27 +7,25 @@ function initMap() {
     center: hospi,
     zoom: 13
   });
-  // se genera la variable marker que contiene el objeto marker y sus características
+
+  //se asigna un evento al mapa cuando se le hace click.
+  google.maps.event.addDomListener(map, 'click', function(event) {
+    //muestra un alert con las coordenadas del click
+    var lat = event.latLng.lat();
+    var lng = event.latLng.lng();
+    document.getElementById('latitud').value=lat;
+    document.getElementById('longitud').value=lng;
+    crearMarker(map,lat,lng);
+
+    });
+}
+
+function crearMarker(mapa,latitud,longitud){
+  //se genera la variable marker que contiene el objeto marker y sus características
   var marker = new google.maps.Marker({
     map: map,
     position: hospi,
     title: 'Hello World!'
   });
 
-  var posicion = marker.getPosition();
-
-  //se asigna un evento al mapa cuando se le hace click.
-  google.maps.event.addDomListener(map, 'click', function() {
-    //muestra un alert con las coordenadas del click
-    window.alert(map.getBounds());
-    });
-
-    //se crea la variable infowindow que contiene el objeto infowindow
-  var infowindow = new google.maps.InfoWindow({
-    content: 'texto'
-  });
-    // al hacer click sobre el marker, llama al objeto infowindow
-  google.maps.event.addDomListener(marker, 'click', function() {
-    infowindow.open(map,marker);
-    });
 }

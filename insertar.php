@@ -31,22 +31,19 @@ if(empty($_SESSION['login_user'])){
 			<h1 id="h1Agenda">Agenda de Contactos</h1>
 		</header>
       <article>
-         <form id="formInsertar" action="insertar.proc.php" method="get">
-            <p>Nombre:   <input type="text" name="nombre"></p>
-            <p>Apellidos:<input type="text" name="apellidos"></p>
-            <p>Email:    <input type="mail" name="mail"></p>
-            <p>Teléfono: <input type="tel"  name="telefono" pattern="[0-9]{9}"></p>
-            <p>Direción: <input type="text" name="direccion"></p>
-            <input type="hidden" name="latitud" value="">
-            <input type="hidden" name="longitud" value="">
+         <form id="formulario_box" action="insertar.proc.php" method="get">
+            <p>Nombre:   <input type="text" name="nombre" required></p>
+            <p>Apellidos:<input type="text" name="apellidos" required></p>
+            <p>Email:    <input type="email" name="mail" required title="Formato correcto: jose@mycontacts.com"></p>
+            <p>Teléfono: <input type="tel"  name="telefono" pattern="[0-9]{9}" required></p>
+            <p>Direción: <input type="text" name="direccion" required></p>
+            <p>Latitud: <input type="text" id="latitud" name="latitud" value="" size="100"></p>
+            <p>Longitud:<input type="text" id="longitud" name="longitud" value=""></p>
             <div id="map" style="width:300px;height:200px;"></div><br/>
             <input type="submit" name="enviar" value="Enviar">
          </form>
 	   </article>
-		<footer>
-			<p>CopyRight &copy; creado por Aitor<p>
-			<a href="#"><img src="img/scrolltop.png" alt="top"></a>
-		</footer>
+
 		</section>
 	</body>
 </html>
