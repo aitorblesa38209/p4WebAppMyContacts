@@ -33,8 +33,7 @@ if(empty($_SESSION['login_user'])){
 				</div>
 				<div id="derecha">
 					<?php echo $_SESSION['nombre_usuario']. " " .$_SESSION['apellido_usuario']?> <a href="login/logout.php" title="Logout"><img src="img/logout.png" alt="Logout"></a>
-<<<<<<< HEAD
-=======
+
 				</div> 
 			</header>
 		
@@ -45,20 +44,9 @@ if(empty($_SESSION['login_user'])){
 				</div>
 				<div id="nuevo_contacto">
 					<a href="insertar.php" title="Nuevo Contacto"><img src="img/add_user.png" alt="Insertar usuario"/></a>
->>>>>>> 3d50520a6f96f0f1be6b0c4bfa575bda11946dca
 				</div>
-			</header>
-
-   		<div class="lateral">
-   			<div id="contenedor_titulo">
-   				<div id="titulo_contacto">
-   					<h1>Agenda de Contactos</h1>
-   				</div>
-   				<div id="nuevo_contacto">
-   					<a href="insertar.php" title="Insertar"><img src="img/add_user.png" alt="Insertar usuario"/></a>
-   				</div>
-   			</div>
-   		</div>
+			</div>
+		</div>
 
 			<?php
 				$sql ="SELECT * FROM tbl_contactos WHERE usu_id=$_SESSION[usu_id]";
@@ -67,7 +55,7 @@ if(empty($_SESSION['login_user'])){
 					echo "<div class='contenido'>";
 
 	            	while ($mostrar = mysqli_fetch_array($datos)) {
-						echo "<article id='contenido_contacto'>";
+						echo "<article>";
 						echo utf8_encode("<p>Nombre: $mostrar[con_nombre]");
 						echo utf8_encode(" <p>Email: $mostrar[con_mail]</p>");
 						echo utf8_encode(" <p>Telefono: $mostrar[con_telefono]</p>");
@@ -76,7 +64,7 @@ if(empty($_SESSION['login_user'])){
 						echo utf8_encode("<a href='#'>Ver en Mapa</a></p>");
 						echo "<hr>";
 						echo "</article>";
-						json_php[]= $mostrar;
+						//$json_php[]= $mostrar;
 	            	}
 	            	echo "</div>";
 				}else{

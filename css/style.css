@@ -8,6 +8,7 @@ body {
 	/*background-color: #323B55;*/
 	margin: 0;
 	height: 100%;
+	overflow: hidden;
 }
 	#wrapper{
 		min-width: 1024px;
@@ -20,8 +21,9 @@ body {
 		width: 60%;
 		height: auto;
 		margin-left: 20%;
-		position: absolute;
+		position: fixed;
 		vertical-align: middle;
+		font-family: Raleway thin;
 	}
 	#izquierda{
 		float: left;
@@ -49,7 +51,7 @@ body {
 		position: fixed;
 	}
 		#formulario h1{
-			margin-left: 30%;
+			margin-left: 100px;
 			margin-top: 5%;
 			color: #000;
 			float:left;
