@@ -2,10 +2,18 @@
 
 api google felipe: AIzaSyBW_5m9Miz3xloHRp1QF3cW5V_I0qoz3RI
 
+28/01/2016
+----------
+*Creació de dades de php a json
+*Redisseny dels elements html
+*Sistema de modificació d'usuaris
+
+
 27/01/2016
 ----------
 *Sistema d'introducció d'usuaris
-*Recepció d'informació en el map
+*Recepció d'informació de google maps
+*Validació de formulari per html5
 
 26/01/2016
 ----------

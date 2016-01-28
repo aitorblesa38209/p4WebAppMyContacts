@@ -33,20 +33,20 @@ if(empty($_SESSION['login_user'])){
 				</div>
 				<div id="derecha">
 					<?php echo $_SESSION['nombre_usuario']. " " .$_SESSION['apellido_usuario']?> <a href="login/logout.php" title="Logout"><img src="img/logout.png" alt="Logout"></a>
-				</div> 
+				</div>
 			</header>
-		
-		<div class="lateral">
-			<div id="contenedor_titulo">
-				<div id="titulo_contacto">
-					<h1>Agenda de Contactos</h1>
-				</div>
-				<div id="nuevo_contacto">
-					<a href="insertar.php" title="Insertar"><img src="img/add_user.png" alt="Insertar usuario"/></a>
-				</div>
-			</div>
-		</div>
-		
+
+   		<div class="lateral">
+   			<div id="contenedor_titulo">
+   				<div id="titulo_contacto">
+   					<h1>Agenda de Contactos</h1>
+   				</div>
+   				<div id="nuevo_contacto">
+   					<a href="insertar.php" title="Insertar"><img src="img/add_user.png" alt="Insertar usuario"/></a>
+   				</div>
+   			</div>
+   		</div>
+
 			<?php
 				$sql ="SELECT * FROM tbl_contactos WHERE usu_id=$_SESSION[usu_id]";
 				$datos = mysqli_query($conexion, $sql);
@@ -63,7 +63,7 @@ if(empty($_SESSION['login_user'])){
 						echo utf8_encode("<a href='#'>Ver en Mapa</a></p>");
 						echo "<hr>";
 						echo "</article>";
-						//$json_php[]= $mostrar;
+						json_php[]= $mostrar;
 	            	}
 	            	echo "</div>";
 				}else{
@@ -73,7 +73,7 @@ if(empty($_SESSION['login_user'])){
 		<div id="map"></div>
 		<footer>
 			<p>CopyRight &copy; creado por Aitor y Felipe<p>
-			
+
 		</footer>
 	</body>
 </html>

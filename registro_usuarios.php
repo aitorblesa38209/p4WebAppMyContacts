@@ -24,7 +24,7 @@
 					<form id="formulario_box" action="registro_usuarios.proc.php" method="POST">
 						<input name="nombre" type="text" placeholder="Nombre" required>
 						<input name="apellido" type="text" placeholder="Apellido" required>
-						<input name="email" type="email" placeholder="Email" required title="Formato correcto: xxx.xxx@dominio.com">
+						<input name="email" type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required title="Formato correcto: xxx.xxx@dominio.com">
 						<input name="pass" type="password" placeholder="Contraseña" required>
 						<input name="telefono" type="tel" pattern="[0-9]{9}" placeholder="Telefono" required title="Formato correcto: 123456789">
 						<input name="direccion" type="text" placeholder="Direccion" required>
