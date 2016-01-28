@@ -45,7 +45,7 @@ if (isset($_REQUEST['submit'])) {
 			echo $_SESSION['nivel_usuario']. "</br>";
 			echo $_SESSION['acceso'];
 			echo $_SESSION['usu_id'];*/
-			header('location:bienvenida.php'); //Llevamos al usuario a su perfil con su sesion
+			header('location:main.php'); //Llevamos al usuario a su perfil con su sesion
 		}else{
 			$error ="<div class='error'>Usuario o Contraseña incorrectos</div>";
 		}

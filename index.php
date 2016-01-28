@@ -1,24 +1,27 @@
 <?php
 	include('login/login.php');
 ?>
-<!DOCTYPE html>
-<html lang="es">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="description" content="sesiones">
-		<meta name="keywords" content="HTML5, CSS3, JavaScript">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<title>My Contacts</title>
-		<link rel="icon" type="image/png" href="img/favicon.png"/>
-	</head>
-	<body>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="wrapper">
 	<header>
-		<nav>
-			<img src="img/logo.png" alt="MyContacts" width="50px">
-		</nav>
+		<div id="izquierda">
+			<img src="img/logo.png" alt="Mycontacts"/>
+		<h1 id="empresa">My Contacts</h1>
+		</div>
+		<!-- <div id="derecha">
+			Aitor Blesa <a href="login/logout.php" title="Logout"><img src="img/logout.png" alt="Logout"></a>
+		</div> -->
 	</header>
-			<section>
-				<h1>Accede a tu Agenda</h1>
+	<section id="formulario">
+		<h1>Accede a tu Agenda</h1>
 					<form id="formulario_box" method="POST">
 						<input name="user" type="text" placeholder="Email" required title="Formato correcto: xxx.xxx@dominio.com">
 						<input name="pass" type="password" placeholder="Contraseña" required>
@@ -27,10 +30,10 @@
 				<input name="submit" type="submit" value="Regístrate" onclick="location.href='registro_usuarios.php'"></input>
 
 				<?php echo $error ;?>
-			</section>
-
+	</section>
 	<footer>
 		<p>CopyRight &copy; creado por Aitor y Felipe<p>
 	</footer>
-	</body>
+	</div>
+</body>
 </html>
