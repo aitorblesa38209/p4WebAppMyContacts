@@ -23,7 +23,7 @@
 	<section id="formulario">
 		<h1>Accede a tu Agenda</h1>
 					<form id="formulario_box" method="POST">
-						<input name="user" type="text" placeholder="Email" required title="Formato correcto: xxx.xxx@dominio.com">
+						<input name="user" type="text" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required title="Formato correcto: jose@mycontacts.com" maxlength="50">
 						<input name="pass" type="password" placeholder="Contraseña" required>
 						<input name="submit" type="submit" value="Login"></input>
 					</form>

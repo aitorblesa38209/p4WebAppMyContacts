@@ -47,15 +47,12 @@ if(empty($_SESSION['login_user'])){
     <div class="contenido">
         <article id="contenido_contacto">
             <form id="formulario_box" action="insertar.proc.php" method="get">
-               <p>Nombre:   <input type="text" name="nombre" maxlength="25"required></p>
-              <p>Apellidos:<input type="text" name="apellidos" maxlength="50"required></p>
-              <p>Email:    <input type="email" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required title="Formato correcto: jose@mycontacts.com" maxlength="50"></p>
-              <p>Teléfono: <input type="tel"  name="telefono" pattern="[0-9]{9}" maxlength="9" required></p>
-              <p>Direción: <input type="text" name="direccion" id="direccion" maxlength="90" required></p>
-              <input type="hidden" id="lat" name="name">
-              <input type="hidden" id="lng" name="name">
-              <input id="coordenadas" type="text" value="">
-              <div id="map" style="width:600px;height:500px;"></div><br/>
+               <input type="text" placeholder="Nombre" name="nombre" maxlength="25"required>
+              <input type="text" placeholder="Apellidos"name="apellidos" maxlength="50"required>
+              <input type="email" placeholder="Correo electrónico"name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required title="Formato correcto: jose@mycontacts.com" maxlength="50">
+              <input type="tel"  placeholder="Teléfono"name="telefono" pattern="[0-9]{9}" maxlength="9" required>
+              <input type="text" placeholder="Dirección"name="direccion" id="direccion" maxlength="90" required>
+              <input id="coordenadas" name="coordenadas"type="text" value="">
               <input type="submit" name="enviar" value="Registrar">
             </form>
         </article>

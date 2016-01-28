@@ -6,7 +6,7 @@ body {
     -o-background-size: cover;
 	background-size: cover;
 	margin: 0;
-	
+
 }
 @font-face {
 	src: url('../fonts/Raleway-Thin.ttf');
@@ -14,7 +14,7 @@ body {
 	#wrapper{
 		min-width: 1024px;
 		min-height: 945px;
-	
+
 	}
 	header{
 		color: #000;
@@ -30,33 +30,33 @@ body {
 		width: 40%;
 		font-family: Raleway thin;
 	}
-	
+
 	#derecha{
 		float: right;
 		margin-right: 10px;
 		font-size: 20px;
 		margin-top: 5px;
 	}
-	
+
 	img{
 		float: left;
 	}
-	
+
 
 	#empresa{
 		margin-top: 35px;
 	}
-	
+
 	.lateral{
-		
+
 		height: 500px;
 		width: 400px;
 		float: left;
 		margin-top: 10%;
-		margin-left: 1%; 
-		position: fixed; 
+		margin-left: 1%;
+		position: fixed;
 	}
-	
+
 	#contenedor_titulo{
 		position: fixed;
 		width: 720px;
@@ -80,6 +80,7 @@ body {
 		position: fixed;
 		height: 520px;
 	}
+
 	.modificar_contacto{
 		width: 15%;
 		height: 30px;
@@ -92,15 +93,16 @@ body {
 		cursor: pointer;
 		background-image: -webkit-linear-gradient(bottom, #27ae60 0%, #7dce9f 100%);
 	}
-	
+
 	#map{
 		border: solid 1px #fff;
 		height: 600px;
-		width: 1100px;
+		width: 600px;
 		float: right;
 		margin-top: 10%;
 		margin-right: 2%;
 	}
+
 	#formulario_box input[type="text"], input[type="password"], input[type="tel"], input[type="email"] {
 		height: 40px;
 		font-size: 14px;
@@ -108,10 +110,10 @@ body {
 		border: 1px solid rgba(0, 0, 0, .49);
 		padding-left: 2%;
 		border-radius: 6px;
-		width: 80%;
+		width: 60%;
 		display: block;
 		-webkit-box-sizing: border-box;
-	}		
+	}
 
 	footer{
 		position:fixed;

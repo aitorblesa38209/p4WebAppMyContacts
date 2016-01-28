@@ -18,9 +18,7 @@ google.maps.event.addListener(map, 'click', function(event) {
     //se asigna a los input latitud y longitud las coordenadas del click
     latitud = event.latLng.lat();
     longitud = event.latLng.lng()
-    document.getElementById('coordenadas').value=latitud+", "+longitud;
-    //document.getElementById('latitud').value=latitud;
-   // document.getElementById('longitud').value=longitud;
+    document.getElementById('coordenadas').value=latitud+","+longitud;
     geocodeLatLng(geocoder, map, infowindow);
 
     });
@@ -40,7 +38,7 @@ function geocodeLatLng(geocoder, map, infowindow) {
         direccion = results[1].formatted_address;
         infowindow.setContent(direccion);
       document.getElementById('direccion').value=direccion;
-       
+
 
         infowindow.open(map, marker);
       } else {
