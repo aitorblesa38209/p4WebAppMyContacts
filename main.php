@@ -33,6 +33,19 @@ if(empty($_SESSION['login_user'])){
 				</div>
 				<div id="derecha">
 					<?php echo $_SESSION['nombre_usuario']. " " .$_SESSION['apellido_usuario']?> <a href="login/logout.php" title="Logout"><img src="img/logout.png" alt="Logout"></a>
+<<<<<<< HEAD
+=======
+				</div> 
+			</header>
+		
+		<div class="lateral">
+			<div id="contenedor_titulo">
+				<div id="titulo_contacto">
+					<h1>Agenda de Contactos</h1>
+				</div>
+				<div id="nuevo_contacto">
+					<a href="insertar.php" title="Nuevo Contacto"><img src="img/add_user.png" alt="Insertar usuario"/></a>
+>>>>>>> 3d50520a6f96f0f1be6b0c4bfa575bda11946dca
 				</div>
 			</header>
 

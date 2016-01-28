@@ -13,7 +13,6 @@ if(empty($_SESSION['login_user'])){
     <meta http-equiv="Content-Type" content="text/html">
     <meta charset="utf-8">
     <meta name="description" content="sesiones">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/insertar_usuario.css">
     <link rel="icon" type="image/png" href="img/favicon.png"/>
     <script type="text/javascript" src="js/maps.js"></script>
@@ -26,12 +25,6 @@ if(empty($_SESSION['login_user'])){
       </script>
   </head>
     <body>
-    <section class="envoltura">
-    <header>
-      <p><a href="login/logout.php" class="logout" title="Logout"><img src="img/logout_white.png" alt="Logout"></a>
-      <?php echo $_SESSION['nombre_usuario']. " " .$_SESSION['apellido_usuario']?></p>
-      <h1 id="h1Agenda">Agenda de Contactos</h1>
-    </header>
     <div id="wrapper">
       <header>
         <div id="izquierda">
