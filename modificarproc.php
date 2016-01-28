@@ -5,5 +5,5 @@ $sql = "UPDATE tbl_contactos SET con_nombre='$_REQUEST[nombre]', con_apellido='$
 
 //echo $sql;
 $datos = mysqli_query($conexion, $sql);
-header("location: bienvenida.php")
+header("location: main.php")
 ?>
