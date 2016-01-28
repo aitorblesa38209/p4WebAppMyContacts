@@ -39,11 +39,11 @@ if(empty($_SESSION['login_user'])){
 					<article class='contenido'>
 						<form id="formulario_box" name="formulario1" action="modificarproc.php" method="POST">
           					<input type="hidden" name="contacto_id" value="<?php echo $mostrar['con_id']; ?>"><br/>
-         					<p>Nombre:<p><input type="text" name="nombre" size="20" maxlength="25" value="<?php echo  utf8_encode($mostrar['con_nombre']); ?>" required>
-         					<p>Apellido:<input type="text" name="apellido" size="20" maxlength="25" value="<?php echo utf8_encode($mostrar['con_apellido']); ?>" required></p>
-          					<p>Email:<input type="email" name="email" value="<?php echo utf8_encode($mostrar['con_mail']); ?>" required></p>
-       						<p>Telefono:<input type="tel" name="telefono" pattern="[0-9]{9}" value="<?php echo utf8_encode($mostrar['con_telefono']); ?>" required></p>
-       						<p>Direccion:<input type="text" name="direccion" value="<?php echo utf8_encode($mostrar['con_direccion']); ?>"required>
+         					<input type="text" name="nombre" size="20" maxlength="25" value="<?php echo  utf8_encode($mostrar['con_nombre']); ?>" required>
+         					<input type="text" name="apellido" size="20" maxlength="25" value="<?php echo utf8_encode($mostrar['con_apellido']); ?>" required>
+          					<input type="email" name="email" value="<?php echo utf8_encode($mostrar['con_mail']); ?>" required>
+       						<input type="tel" name="telefono" pattern="[0-9]{9}" value="<?php echo utf8_encode($mostrar['con_telefono']); ?>" required>
+       						<input type="text" name="direccion" value="<?php echo utf8_encode($mostrar['con_direccion']); ?>"required>
        						<input type="submit" class="modificar_contacto" value="Guardar">
         					<input name="submit" type="submit" value="Volver" onclick="location.href='main.php'"></input>
         				</form>

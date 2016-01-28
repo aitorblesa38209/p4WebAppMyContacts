@@ -6,6 +6,7 @@ body {
     -o-background-size: cover;
 	background-size: cover;
 	margin: 0;
+	overflow:hidden;
 }
 @font-face {
 	src: url('../fonts/Raleway-Thin.ttf');
@@ -56,20 +57,22 @@ body {
 		position: fixed; 
 	}
 	
+	a{
+		text-decoration: none
+	}
 	#contenedor_titulo{
 		position: fixed;
 		width: 400px;
 		background-color: #27ae60;
-		color: #fff;
-		
-
+		color: #000;
 	}
+
 	#titulo_contacto{
 		width: 340px;
 		margin-left: 10px;
 		float: left;
 		font-family: Raleway thin;
-
+	
 	}
 
 	#nuevo_contacto{
@@ -79,13 +82,13 @@ body {
 
 	.contenido{
 		background-color: #ecf0f1;
-		width: 380px;
-		margin-top: 270px;
+		width: 378px;
+		margin-top: 214px;
+		margin-left: 13px;
 		float: left;
-		margin-left: 1%;
-		padding-left: 20px;
+		padding-left: 22px;
 		position: fixed;
-		height: 520px;
+		height: 55%;
 		overflow-y: scroll;
 	}
 	.modificar_contacto{
@@ -103,14 +106,13 @@ body {
 	}
 	
 	#map{
-		border: solid 1px #fff;
-		height: 600px;
-		width: 1400px;
-		float: right;
-		margin-top: 10%;
-		margin-right: 2%;
+		height: 430px;
+		width: 800px;
+		float: left;
+		margin-left: 460px;
+		margin-top: 136px;
+		position: fixed;
 	}
-
 	footer{
 		position:fixed;
 		bottom: 0;

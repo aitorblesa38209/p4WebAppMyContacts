@@ -14,7 +14,7 @@ if(empty($_SESSION['login_user'])){
     <meta charset="utf-8">
     <meta name="description" content="sesiones">
     <link rel="stylesheet" type="text/css" href="css/insertar_usuario.css">
-    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <link rel="icon" type="image/png" href="/img/favicon.png"/>
     <script type="text/javascript" src="js/maps.js"></script>
       <!-- api de google maps  -->
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW_5m9Miz3xloHRp1QF3cW5V_I0qoz3RI&callback=initMap" async defer></script>
@@ -26,23 +26,25 @@ if(empty($_SESSION['login_user'])){
   </head>
     <body>
     <div id="wrapper">
-      <header>
-        <div id="izquierda">
-          <img src="img/logo.png" alt="Mycontacts"/>
-          <h1 id="empresa">My Contacts</h1>
-        </div>
-        <div id="derecha">
-          <?php echo $_SESSION['nombre_usuario']. " " .$_SESSION['apellido_usuario']?> <a href="login/logout.php" title="Logout"><img src="img/logout.png" alt="Logout"></a>
-        </div>
-      </header>
+        <header>
+            <div id="izquierda">
+                <img src="img/logo.png" alt="Mycontacts"/>
+                <h1 id="empresa">My Contacts</h1>
+            </div>
+            <div id="derecha">
+                <?php echo $_SESSION['nombre_usuario']. " " .$_SESSION['apellido_usuario']?> <a href="login/logout.php" title="Logout"><img src="img/logout.png" alt="Logout"></a>
+            </div>
+        </header>
 
     <div class="lateral">
-      <div id="contenedor_titulo">
-        <div id="titulo_contacto">
-          <h1>Agenda de Contactos</h1>
+        <div id="contenedor_titulo">
+            <div id="titulo_contacto">
+                <h1>Agenda de Contactos</h1>
+            </div>
+            <div id="nuevo_contacto">
+                <a href="main.php" title="Volver"><img src="img/atras.png" alt="Volver"/></a>
+            </div>
         </div>
-
-      </div>
     </div>
     <div class="contenido">
         <article id="contenido_contacto">
@@ -57,7 +59,9 @@ if(empty($_SESSION['login_user'])){
             </form>
         </article>
     </div>
-    <div id="map"></div>
+    <div id="mapa_fijo">
+        <div id="map"></div>
+    </div>
     <footer>
       <p>CopyRight &copy; creado por Aitor y Felipe<p>
     </footer>
