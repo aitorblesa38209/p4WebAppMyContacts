@@ -5,6 +5,9 @@ if(empty($_SESSION['login_user'])){
     //en caso afirmativo, redirige a index para login
     header('location: index.php');
   }
+  //array para guardar la información de la base de datos en formato json
+
+
 ?>
 <!DOCTYPE html>
 <!--transformar en html5  -->
@@ -15,6 +18,14 @@ if(empty($_SESSION['login_user'])){
 		<meta name="description" content="sesiones">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="icon" type="image/png" href="img/favicon.png"/>
+      <script type="text/javascript" src="js/maps.js"></script>
+      <!-- api de google maps  -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW_5m9Miz3xloHRp1QF3cW5V_I0qoz3RI&callback=initMap" async defer></script>
+      <script type="text/javascript">
+         window.onload = function(){
+            initMap(json);
+         }
+      </script>
 	</head>
 		<body>
 	<!-- <nav>
@@ -38,31 +49,21 @@ if(empty($_SESSION['login_user'])){
 						echo utf8_encode(" <p>Email: $mostrar[con_mail]</p>");
 						echo utf8_encode(" <p>Telefono: $mostrar[con_telefono]</p>");
 						echo utf8_encode(" <p>Direccion: $mostrar[con_direccion]</p>");
-
-
-                  $matriz = array('nombre' => $mostrar['con_nombre'],
-                                  'latitud' => $mostrar['con_latitud'],
-                                  'longitud' => $mostrar['con_longitud']);
-                                  
+                  //El array json_mostrar guardará el contenido extraido de la variable mostrar
+                  $json_php[] = $mostrar;
 						echo utf8_encode("<a href='modificar.php' class='modificar'>Modificar</a>");
-	            		?>
-	            		</article>
-	            		<?php
-	            	}
+	            	echo "</article>";
+               }
+                  echo "<div id='map' style='width:600px;height:500px;'></div><br/>";
 				}else{
 	        		echo "<article id='rellena_contenido'>Inserta contactos en tu agenda!</article>";
 	        	}
+
 			?>
-		<footer>
-         <?php
-            if ($matriz!=null) {
-               $datosJson = json_encode($matriz,true);
-               echo $datosJson;
-            }
-         ?>
-			<p>CopyRight &copy; creado por Aitor<p>
-			<a href="#"><img src="img/scrolltop.png" alt="top"></a>
-		</footer>
 		</section>
+      <script type="text/javascript">
+         var json_js = <?php echo json_encode($json_php); ?>;
+      </script>
+      <?php include 'template/footer.php'; ?>
 	</body>
 </html>

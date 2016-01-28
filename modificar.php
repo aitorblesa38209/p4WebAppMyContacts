@@ -20,10 +20,10 @@ if(empty($_SESSION['login_user'])){
 		<nav>
 			<img src="img/logo.png" alt="MyContacts" width="50px">
 		</nav>
-		
+
 		<section class="envoltura">
 		<header>
-		
+
 			<p><a href="login/logout.php" class="logout" title="Logout"><img src="img/logout_white.png" alt="Logout"></a>
 			<?php echo $_SESSION['nombre_usuario']. " " .$_SESSION['apellido_usuario']?></p>
 			<h1>Agenda de Contactos</h1>
@@ -45,16 +45,13 @@ if(empty($_SESSION['login_user'])){
        						<input type="submit" class="modificar" value="Guardar">
         					<a href="bienvenida.php" class="modificar">Volver</a>
         				</form>
-	            		
-	            	</article>		
+
+	            	</article>
 	            	<?php
 	            	}
 				}
 			?>
-		<footer>
-			<p>CopyRight &copy; creado por Aitor<p>
-			
-		</footer>
 		</section>
+      <?php include 'template/footer.php'; ?>
 	</body>
 </html>
