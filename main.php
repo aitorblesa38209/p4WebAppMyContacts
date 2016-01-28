@@ -42,7 +42,7 @@ if(empty($_SESSION['login_user'])){
 					<h1>Agenda de Contactos</h1>
 				</div>
 				<div id="nuevo_contacto">
-					<a href="insertar.php" title="Insertar"><img src="img/add_user.png" alt="Insertar usuario"/></a>
+					<a href="insertar.php" title="Nuevo Contacto"><img src="img/add_user.png" alt="Insertar usuario"/></a>
 				</div>
 			</div>
 		</div>
