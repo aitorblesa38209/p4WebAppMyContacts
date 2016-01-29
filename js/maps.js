@@ -44,26 +44,15 @@ function geocodeLatLng(geocoder, map, infowindow) {
   });
 }
 
-function mostrar(map, infowindow, json) {
-  var input = document.getElementById('coordenadas').value;
+function mostrarMarker(json, usuario, map){
+  var input = json[usuario].con_coordenadas;
   var latlngStr = input.split(',', 2);
   var latlng = {lat: parseFloat(latlngStr[0]), lng: parseFloat(latlngStr[1])};
-  geocoder.geocode({'location': latlng}, function(results, status) {
-    if (status === google.maps.GeocoderStatus.OK) {
-      if (results[1]) {
-        var marker = new google.maps.Marker({
-          position: latlng,
-          map: map
-        });
-        direccion = results[1].formatted_address;
-        infowindow.setContent(direccion);
-      document.getElementById('direccion').value=direccion;
-        infowindow.open(map, marker);
-      } else {
-        window.alert('No hay resultados');
-      }
-    } else {
-      window.alert('Geocoder ha fallado: ' + status);
-    }
+  var marker = new google.maps.Marker({
+    position: latlng,
+    map: map,
+  });
+  var info = new google.maps.InfoWindow({
+    content: contentString
   });
 }
