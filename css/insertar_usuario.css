@@ -14,7 +14,7 @@ body {
 	#wrapper{
 		min-width: 1024px;
 		min-height: 945px;
-
+	
 	}
 	header{
 		color: #000;
@@ -30,34 +30,32 @@ body {
 		width: 40%;
 		font-family: Raleway thin;
 	}
-
+	
 	#derecha{
 		float: right;
 		margin-right: 10px;
 		font-size: 20px;
 		margin-top: 5px;
 	}
-
+	
 	img{
 		float: left;
 	}
-
+	
 
 	#empresa{
 		margin-top: 35px;
 	}
-
+	
 	.lateral{
-
+		
 		height: 500px;
 		width: 400px;
 		float: left;
 		margin-top: 10%;
-		margin-left: 1%;
-		position: fixed;
-	}
-		margin-left: 1%;
+		margin-left: 1%; 
 		}
+	
 	#contenedor_titulo{
 		position: fixed;
 		width: 500px;
@@ -87,7 +85,7 @@ body {
 		height: 55%;
 		overflow-y: scroll;
 	}
-
+	
 	.modificar_contacto{
 		width: 22%;
 		height: 30px;
@@ -101,8 +99,8 @@ body {
 		cursor: pointer;
 		background-image: -webkit-linear-gradient(bottom, #27ae60 0%, #7dce9f 100%);
 	}
-
-
+	
+	
 	#map{
 		position: fixed;
 		height: 430px;
@@ -111,7 +109,6 @@ body {
 		margin-left: 120px;
 		margin-top: 136px;
 	}
-
 	#formulario_box input[type="text"], input[type="password"], input[type="tel"], input[type="email"] {
 		height: 40px;
 		font-size: 14px;
@@ -119,10 +116,10 @@ body {
 		border: 1px solid rgba(0, 0, 0, .49);
 		padding-left: 2%;
 		border-radius: 6px;
-		width: 60%;
+		width: 80%;
 		display: block;
 		-webkit-box-sizing: border-box;
-	}
+	}		
 
 	footer{
 		position:fixed;
