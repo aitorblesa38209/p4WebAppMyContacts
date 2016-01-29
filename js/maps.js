@@ -20,6 +20,7 @@ google.maps.event.addListener(map, 'click', function(event) {
     });
 }
 
+//funció de geolocalització
 function geocodeLatLng(geocoder, map, infowindow) {
   var input = document.getElementById('coordenadas').value;
   var latlngStr = input.split(',', 2);
@@ -44,15 +45,19 @@ function geocodeLatLng(geocoder, map, infowindow) {
   });
 }
 
+//funció per mostrar els usuaris seleccionats al mapa
 function mostrarMarker(json, usuario, map){
+  usuario = usuario - 1;
   var input = json[usuario].con_coordenadas;
   var latlngStr = input.split(',', 2);
   var latlng = {lat: parseFloat(latlngStr[0]), lng: parseFloat(latlngStr[1])};
   var marker = new google.maps.Marker({
     position: latlng,
     map: map,
+    animation: google.maps.Animation.DROP
   });
   var info = new google.maps.InfoWindow({
-    content: contentString
+    content: json[usuario].con_nombre + "<br/>" + json[usuario].con_direccion + "<br/>" + json[usuario].con_telefono
   });
+  info.open(map, marker);
 }

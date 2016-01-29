@@ -13,7 +13,7 @@ if(empty($_SESSION['login_user'])){
     <meta http-equiv="Content-Type" content="text/html">
     <meta charset="utf-8">
     <meta name="description" content="sesiones">
-    <link rel="stylesheet" type="text/css" href="css/insertar_usuario.css">
+    <link rel="stylesheet" type="text/css" href="/css/insertar_usuario.css">
     <link rel="icon" type="image/png" href="/img/favicon.png"/>
     <script type="text/javascript" src="js/maps.js"></script>
       <!-- api de google maps  -->

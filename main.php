@@ -13,7 +13,7 @@ if(empty($_SESSION['login_user'])){
 		<meta http-equiv="Content-Type" content="text/html">
 		<meta charset="utf-8">
 		<meta name="description" content="sesiones">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="/css/styles.css">
 		<link rel="icon" type="image/png" href="img/favicon.png"/>
 	<script type="text/javascript" src="js/maps.js"></script>
       <!-- api de google maps  -->
@@ -50,18 +50,7 @@ if(empty($_SESSION['login_user'])){
 		</div>
 
 			<?php
-				/*$sql_user ="SELECT * FROM tbl_usuario WHERE usu_id=$_SESSION[usu_id]";
-				$datos_user = mysqli_query($conexion, $sql_user);
-				$mostrar_user = mysqli_fetch_array($datos_user);
-					echo "<article>";
-   						echo utf8_decode("<p>Nombre: $mostrar_user[usu_nombre]");
-   						echo utf8_encode(" <p>Email: $mostrar_user[usu_mail]</p>");
-   						echo utf8_encode(" <p>Telefono: $mostrar_user[usu_telefono]</p>");
-   						echo utf8_decode(" <p>Direccion: $mostrar_user[usu_direccion]</p>");
-   						echo utf8_encode("<a class='modificar_contacto' href='modificar_usuario.php?usu_id=$mostrar_user[usu_id]'>Modificar</a></p>");
-   						echo utf8_encode("<a href='#'>Ver en Mapa</a></p>");
-   						echo "<hr>";
-   						echo "</article>";*/
+
 
 				$sql ="SELECT * FROM tbl_contactos WHERE usu_id=$_SESSION[usu_id]";
 				$datos = mysqli_query($conexion, $sql);

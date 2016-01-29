@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description" content="sesiones">
 		<meta name="keywords" content="HTML5, CSS3, JavaScript">
-		<link rel="stylesheet" type="text/css" href="css/registro_usuarios.css">
+		<link rel="stylesheet" type="text/css" href="/css/registro_usuarios.css">
 		<title>My Contacts</title>
 		<link rel="icon" type="image/png" href="/img/favicon.png"/>
 	</head>

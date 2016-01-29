@@ -13,7 +13,7 @@ if(empty($_SESSION['login_user'])){
 		<meta http-equiv="Content-Type" content="text/html">
 		<meta charset="utf-8">
 		<meta name="description" content="sesiones">
-		<link rel="stylesheet" type="text/css" href="css/modificar.css">
+		<link rel="stylesheet" type="text/css" href="/css/modificar.css">
 		<link rel="icon" type="image/png" href="img/favicon.png"/>
 	</head>
 		<body>
@@ -25,9 +25,9 @@ if(empty($_SESSION['login_user'])){
 				</div>
 				<div id="derecha">
 					<?php echo $_SESSION['nombre_usuario']. " " .$_SESSION['apellido_usuario']?> <a href="login/logout.php" title="Logout"><img src="img/logout.png" alt="Logout"></a>
-				</div> 
+				</div>
 			</header>
-		
+
 			<section id="formulario">
 			<h1>Agenda de Contactos</h1>
 			<?php
@@ -48,17 +48,17 @@ if(empty($_SESSION['login_user'])){
        						<input type="submit" class="modificar_contacto" value="Guardar">
         					<a href="main.php">Volver</a>
         				</form>
-	            		
-	            	</article>		
+
+	            	</article>
 	            	<?php
 	            	}
 				}
 			?>
-		
+
 		</section>
 		<footer>
 			<p>CopyRight &copy; creado por Aitor y Felipe<p>
-			
+
 		</footer>
 	</body>
 </html>
