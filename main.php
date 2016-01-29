@@ -56,16 +56,16 @@ if(empty($_SESSION['login_user'])){
 					echo "<div class='contenido'>";
 
 	            	while ($mostrar = mysqli_fetch_array($datos)) {
-						echo "<article>";
-						echo utf8_encode("<p>Nombre: $mostrar[con_nombre]");
-						echo utf8_encode(" <p>Email: $mostrar[con_mail]</p>");
-						echo utf8_encode(" <p>Telefono: $mostrar[con_telefono]</p>");
-						echo utf8_encode(" <p>Direccion: $mostrar[con_direccion]</p>");
-						echo utf8_encode("<a class='modificar_contacto' href='modificar.php?con_id=$mostrar[con_id]'>Modificar</a></p>");
-						echo utf8_encode("<a href='#'>Ver en Mapa</a></p>");
-						echo "<hr>";
-						echo "</article>";
-						$json_php[]= $mostrar;
+   						echo "<article>";
+   						echo utf8_decode("<p>Nombre: $mostrar[con_nombre]");
+   						echo utf8_encode(" <p>Email: $mostrar[con_mail]</p>");
+   						echo utf8_encode(" <p>Telefono: $mostrar[con_telefono]</p>");
+   						echo utf8_decode(" <p>Direccion: $mostrar[con_direccion]</p>");
+   						echo utf8_encode("<a class='modificar_contacto' href='modificar.php?con_id=$mostrar[con_id]'>Modificar</a></p>");
+   						echo utf8_encode("<a href='#'>Ver en Mapa</a></p>");
+   						echo "<hr>";
+   						echo "</article>";
+   						$json_php[]= $mostrar;
 	            	}
 	            	echo "</div>";
 				}else{
@@ -75,7 +75,10 @@ if(empty($_SESSION['login_user'])){
 		<div id="map" style="width:850px;height:450px;position:static;"></div>
 		<footer>
 			<p>CopyRight &copy; creado por Aitor y Felipe<p>
-
+            <script type="text/javascript">
+               var json = <?php echo json_encode($json_php); ?>;
+               alert(json[1].con_coordenadas);
+            </script>
 		</footer>
 	</body>
 </html>
