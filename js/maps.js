@@ -1,4 +1,4 @@
-  var map, latitud, longitud, direccion;
+var map, latitud, longitud, direccion;
 
 function initMap() {
   var centro = new google.maps.LatLng(41.368115, 2.116750);
@@ -10,10 +10,6 @@ function initMap() {
   var geocoder = new google.maps.Geocoder;
   var infowindow = new google.maps.InfoWindow;
 
-
-/* document.getElementById('submit').addEventListener('click', function() {
-    geocodeLatLng(geocoder, map, infowindow);
-  });*/
 google.maps.event.addListener(map, 'click', function(event) {
     //se asigna a los input latitud y longitud las coordenadas del click
     latitud = event.latLng.lat();
@@ -38,14 +34,36 @@ function geocodeLatLng(geocoder, map, infowindow) {
         direccion = results[1].formatted_address;
         infowindow.setContent(direccion);
       document.getElementById('direccion').value=direccion;
-
-
         infowindow.open(map, marker);
       } else {
-        window.alert('No results found');
+        window.alert('No hay resultados');
       }
     } else {
-      window.alert('Geocoder failed due to: ' + status);
+      window.alert('Geocoder ha fallado: ' + status);
+    }
+  });
+}
+
+function mostrar(map, infowindow, json) {
+  var input = document.getElementById('coordenadas').value;
+  var latlngStr = input.split(',', 2);
+  var latlng = {lat: parseFloat(latlngStr[0]), lng: parseFloat(latlngStr[1])};
+  geocoder.geocode({'location': latlng}, function(results, status) {
+    if (status === google.maps.GeocoderStatus.OK) {
+      if (results[1]) {
+        var marker = new google.maps.Marker({
+          position: latlng,
+          map: map
+        });
+        direccion = results[1].formatted_address;
+        infowindow.setContent(direccion);
+      document.getElementById('direccion').value=direccion;
+        infowindow.open(map, marker);
+      } else {
+        window.alert('No hay resultados');
+      }
+    } else {
+      window.alert('Geocoder ha fallado: ' + status);
     }
   });
 }

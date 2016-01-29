@@ -77,7 +77,7 @@ if(empty($_SESSION['login_user'])){
 			<p>CopyRight &copy; creado por Aitor y Felipe<p>
             <script type="text/javascript">
                var json = <?php echo json_encode($json_php); ?>;
-               alert(json[1].con_coordenadas);
+               mostrar(json);
             </script>
 		</footer>
 	</body>

@@ -54,9 +54,7 @@ if(empty($_SESSION['login_user'])){
               <input type="email" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required title="Formato correcto: jose@mycontacts.com" maxlength="50" placeholder="Email">
               <input type="tel"  name="telefono" pattern="[0-9]{9}" maxlength="9" required title="Formato correcto: 618589396" placeholder="Teléfono">
               <input type="text" name="direccion" id="direccion" maxlength="90" required placeholder="Dirección">
-              <input type="hidden" id="lat" name="name">
-              <input type="hidden" id="lng" name="name">
-              <input id="coordenadas" type="hidden" value=""> 
+              <input id="coordenadas" type="hidden" value="">
               <input type="submit" name="enviar" class="modificar_contacto" value="Registrar">
             </form>
         </article>
