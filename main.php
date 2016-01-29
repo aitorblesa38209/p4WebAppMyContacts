@@ -72,7 +72,7 @@ if(empty($_SESSION['login_user'])){
 	        		echo "Inserta contactos en tu agenda!";
 	        	}
 			?>
-		<div id="map" style="width:850px;height:450px;position:static;"></div>
+		<div id="map"></div>
 		<footer>
 			<p>CopyRight &copy; creado por Aitor y Felipe<p>
             <script type="text/javascript">
