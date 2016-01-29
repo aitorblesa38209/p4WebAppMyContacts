@@ -32,7 +32,7 @@ if(empty($_SESSION['login_user'])){
                 <h1 id="empresa">My Contacts</h1>
             </div>
             <div id="derecha">
-                <?php echo $_SESSION['nombre_usuario']. " " .$_SESSION['apellido_usuario']?> <a href="login/logout.php" title="Logout"><img src="img/logout.png" alt="Logout"></a>
+                <?php echo "<a href='modificar_usuario.php?usu_id=$_SESSION[usu_id]'>" .$_SESSION['nombre_usuario']. " " .$_SESSION['apellido_usuario']. "</a>"?><a href="login/logout.php" title="Logout"><img src="img/logout.png" alt="Logout"></a>
             </div>
         </header>
 

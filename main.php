@@ -32,7 +32,7 @@ if(empty($_SESSION['login_user'])){
 					<h1 id="empresa">My Contacts</h1>
 				</div>
 				<div id="derecha">
-					<?php echo $_SESSION['nombre_usuario']. " " .$_SESSION['apellido_usuario']?> <a href="login/logout.php" title="Logout"><img src="img/logout.png" alt="Logout"></a>
+					<?php echo "<a href='modificar_usuario.php?usu_id=$_SESSION[usu_id]'>" .$_SESSION['nombre_usuario']. " " .$_SESSION['apellido_usuario']. "</a>"?> <a href="login/logout.php" title="Logout"><img src="img/logout.png" alt="Logout"></a>
 
 				</div>
 			</header>
@@ -50,6 +50,19 @@ if(empty($_SESSION['login_user'])){
 		</div>
 
 			<?php
+				/*$sql_user ="SELECT * FROM tbl_usuario WHERE usu_id=$_SESSION[usu_id]";
+				$datos_user = mysqli_query($conexion, $sql_user);
+				$mostrar_user = mysqli_fetch_array($datos_user);
+					echo "<article>";
+   						echo utf8_decode("<p>Nombre: $mostrar_user[usu_nombre]");
+   						echo utf8_encode(" <p>Email: $mostrar_user[usu_mail]</p>");
+   						echo utf8_encode(" <p>Telefono: $mostrar_user[usu_telefono]</p>");
+   						echo utf8_decode(" <p>Direccion: $mostrar_user[usu_direccion]</p>");
+   						echo utf8_encode("<a class='modificar_contacto' href='modificar_usuario.php?usu_id=$mostrar_user[usu_id]'>Modificar</a></p>");
+   						echo utf8_encode("<a href='#'>Ver en Mapa</a></p>");
+   						echo "<hr>";
+   						echo "</article>";*/
+
 				$sql ="SELECT * FROM tbl_contactos WHERE usu_id=$_SESSION[usu_id]";
 				$datos = mysqli_query($conexion, $sql);
 				if(mysqli_num_rows($datos)!=0){

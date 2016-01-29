@@ -1,6 +1,15 @@
 ﻿# p4WebAppMyContacts
 
+Web del projecte: #addproyecto2.honor.es
+
 api google felipe: AIzaSyBW_5m9Miz3xloHRp1QF3cW5V_I0qoz3RI
+
+29/01/2016
+----------
+*Cambios en modificación e inserció d'usuaris i contactes
+*Funció de mostrar els contactes en el mapa al fer click.
+*Configuració de la base de dades a Hostinger
+
 
 28/01/2016
 ----------

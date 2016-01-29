@@ -35,7 +35,7 @@ body {
 		margin-right: 10px;
 		font-size: 20px;
 		margin-top: 5px;
-
+		
 	}
 	
 	img{
@@ -64,7 +64,7 @@ body {
 		position: fixed;
 		width: 400px;
 		background-color: #27ae60;
-		color: #000;
+		color: #fff;
 	}
 
 	#titulo_contacto{
